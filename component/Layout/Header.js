@@ -297,6 +297,14 @@ function Header() {
                       </a>
                       </Link>
                     </li>
+
+                    <li className="nav-list">
+                    <Link href={"/blog"}>
+                      <a className="nav-link">
+                       Blog
+                      </a>
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>

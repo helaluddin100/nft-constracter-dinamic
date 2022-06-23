@@ -8,8 +8,6 @@ function Blog() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [posts, setPosts] = useState([]);
 
-
-
   useEffect(() => {
     fetch("http://localhost:8000/api/blog")
       .then(res => res.json())
@@ -22,13 +20,10 @@ function Blog() {
           setIsLoaded(true);
           setError(error);
         }
-
-
       )
   }, [])
   return (
     <>
-    
       <div id="blog" className="cpy-6">
         <section>
           <div className="container">
@@ -48,13 +43,11 @@ function Blog() {
                   <img src={post.main_image} alt="Blog" />
                 </div>
                 <div className="about-blog">
-                  <Link href={`inner/blog-details/${post.id}`}>
+                <Link href={"/inner/" + post.id}>
                     <a className="urbanist-black-18">
-                      {post.title}
-                    </a>
-                  </Link>
-                  
-                  
+                        {post.title}
+                      </a>
+                </Link>
                   <p className="raleway-grey-16">{post.created_at}</p>
                   <p className="sm-des"dangerouslySetInnerHTML={{__html:post.description.substring(0, 50)}}>
                    
