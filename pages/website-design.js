@@ -5,6 +5,8 @@ import CountUp from "react-countup";
 import { Swiper, SwiperSlide } from "swiper/react";
 import DemoForm from "./inner/demoform";
 import TopProject from "./inner/TopProject";
+import Newsletter from "./inner/Newsletter";
+
 function Coin() {
   const [serviceActive, setServiceActive] = useState(1);
 
@@ -400,37 +402,7 @@ function Coin() {
         </section>
         {/* ===================MARKET REPORT section end  ================== */}
         {/* ===================Newsletter section  ================== */}
-        <div
-          className="newsletters"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div className="newsletter-content">
-            <div className="flex-col">
-              <p className="urbanist-dark-42">Newsletters</p>
-              <p className="raleway-white-18">
-                Most popular gaming digital nft Website
-              </p>
-            </div>
-
-            <div className="subscribe-inputs">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="subscriber-name"
-              />
-
-              <div className="input-withbtn">
-                <input type="text" placeholder="Enter Email Address" />
-                <button className="subscirbe-btn">
-                  <img src="assets/imgs/send.svg" alt="Send" /> Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <img src="assets/imgs/banner-img.png" alt="" className="banner-img" />
-        </div>
+        <Newsletter />
         {/* ===================Newsletter section end ================== */}
         {/* ===================service section ================== */}
         <section>

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import AppLayout from "../component/Layout/Layout";
-import { Navigation, A11y } from "swiper";
+
 import CountUp from "react-countup";
 import DemoForm from "./inner/demoform";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import TopProject from "./inner/TopProject";
-
+import HeroSub from "./inner/HeroSub";
+import Newsletter from "./inner/Newsletter";
+import Review from "./inner/Review";
 function Home() {
  
 
@@ -38,21 +39,7 @@ function Home() {
                       gaming, sports, music, video, content Subscription, etc.
                     </p>
                   </div>
-                  <div className="input-box widht-40 ">
-                    <div className="input-area">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Type your email here"
-                      />
-                      <div className="icon">
-                        <i className="icofont-envelope"></i>
-                      </div>
-                      <div className="btn">
-                        <button className="singup-btn">Sign Up</button>
-                      </div>
-                    </div>
-                  </div>
+                  <HeroSub />
                   <div className="service">
                     <ul>
                       <li>
@@ -374,42 +361,11 @@ function Home() {
         </section>
         {/* ===================MARKET REPORT section end  ================== */}
         {/* ===================Newsletter section  ================== */}
-        <div
-          className="newsletters"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div className="newsletter-content">
-            <div className="flex-col">
-              <p className="urbanist-dark-42">Newsletters</p>
-              <p className="raleway-white-18">
-                Get Updates About Our Latest Service Trends
-              </p>
-            </div>
-
-            <div className="subscribe-inputs">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="subscriber-name"
-              />
-
-              <div className="input-withbtn">
-                <input type="text" placeholder="Enter Email Address" />
-                <button className="subscirbe-btn">
-                  <img src="assets/imgs/send.svg" alt="Send" /> Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <img src="assets/imgs/banner-img.png" alt="" className="banner-img" />
-        </div>
+        <Newsletter />
         {/* ===================Newsletter section end ================== */}
 
         {/* =====================top project===================== */}
-      <TopProject />
-
+        <TopProject />
         {/* ===============top project end=============== */}
       
         {/* ===================Mentioned section ================== */}
@@ -489,143 +445,7 @@ function Home() {
         </section>
         {/* ===================Million Of people end ================== */}
         {/* =====================happy clients======================= */}
-        <section>
-          <div className="happy-area cpy-6">
-            <div className="container">
-              <div className="section-wrap">
-                <div className="chainup-title">
-                  <p>Happy clients</p>
-                  <h2>What Our Client Say’s</h2>
-                </div>
-                <p>
-                  This is what clients have been saying after using the <br />
-                  great service we do for clients.
-                </p>
-              </div>
-
-              <div
-                className="client-review"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <Swiper
-                  // install Swiper modules
-                  modules={[Navigation, A11y]}
-                  spaceBetween={50}
-                  slidesPerView={1}
-                  navigation={{
-                    prevEl: ".prev",
-                    nextEl: ".next",
-                  }}
-                  loop="true"
-                  onSwiper={(swiper) => console.log(swiper)}
-                  onSlideChange={() => console.log("slide change")}
-                >
-                  <SwiperSlide>
-                    <div className="client-review-slider">
-                      <div className="review-img">
-                        <img src="assets/img/inner/review.png" alt="" />
-                      </div>
-                      <div className="review-content">
-                        <h2 className="content-title">
-                          Save time managing social media for your business
-                        </h2>
-                        <p>
-                          “This is by far the simplest, most frictionless,
-                          easiest-to-get-going platform that I’ve ever worked
-                          in. Just being able to upload a link and bounce”
-                        </p>
-                        <div className="rating">
-                          <ul className="rating-ul">
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="client-info">
-                          <div className="client-img">
-                            <img src="assets/img/inner/client.png" alt="" />
-                          </div>
-                          <div className="client-name">
-                            <h3>Branun Yes </h3>
-                            <p>CEO of Arcane</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="client-review-slider">
-                      <div className="review-img">
-                        <img src="assets/img/inner/review.png" alt="" />
-                      </div>
-                      <div className="review-content">
-                        <h2 className="content-title">
-                          Save time managing social media for your business
-                        </h2>
-                        <p>
-                          “This is by far the simplest, most frictionless,
-                          easiest-to-get-going platform that I’ve ever worked
-                          in. Just being able to upload a link and bounce”
-                        </p>
-                        <div className="rating">
-                          <ul className="rating-ul">
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                            <li>
-                              <i className="icofont-star"></i>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="client-info">
-                          <div className="client-img">
-                            <img src="assets/img/inner/client.png" alt="" />
-                          </div>
-                          <div className="client-name">
-                            <h3>Branun Yes </h3>
-                            <p>CEO of Arcane</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-                <div className="slider-nav">
-                  <div className="prev">
-                    <i className="icofont-arrow-left"></i>
-                  </div>
-                  <div className="next">
-                    <i className="icofont-arrow-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Review />
         {/* =====================happy clients end======================= */}
         {/* ==========================faq================== */}
         <div className="faqs-section cpb-6">

@@ -148,7 +148,7 @@ function Header() {
                 <div className="lan-social">
                   <div className="language">
                     <a href="#demo-sec" className="nav-link login-btn">
-                      Get Queue
+                      Get Quoted
                     </a>
                   </div>
 
