@@ -4,6 +4,7 @@ import { Navigation, A11y } from "swiper";
 import CountUp from "react-countup";
 import { Swiper, SwiperSlide } from "swiper/react";
 import DemoForm from "./inner/demoform";
+import TopProject from "./inner/TopProject";
 function Testing() {
   const [serviceActive, setServiceActive] = useState(1);
 
@@ -439,46 +440,7 @@ function Testing() {
         </section>
         {/* =================================technologies========================= */}
         {/* =====================top project===================== */}
-        <div className="projects">
-          <div className="section-title">
-            <p className="sm-title">best service</p>
-            <h2 className="sec-title">Top 5 Projects</h2>
-            <p className="sec-des">
-              Get more software development information about exchange software
-              wallet software derivate products and ETC
-            </p>
-          </div>
-
-          <div className="project-content">
-            <button className="btn-purple-2">View Ranking</button>
-
-            <div className="table-responsive">
-              <table className="project-table">
-                <thead>
-                  <tr>
-                    <th>Project Name</th>
-                    <th>Volume 7 days</th>
-                    <th>Sales 7 days</th>
-                    <th>Volume All Time</th>
-                    <th>Sales-All Times</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  {table.map((table, index) => (
-                    <tr key={index}>
-                      <td>{table.projectName}</td>
-                      <td>{table.volume}</td>
-                      <td>{table.sales}</td>
-                      <td>{table.allVolume}</td>
-                      <td>{table.totalSale}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+        <TopProject />
 
         {/* ===============top project end=============== */}
 
