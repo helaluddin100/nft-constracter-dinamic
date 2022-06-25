@@ -45,11 +45,11 @@ function Blog() {
                 <div className="about-blog">
                 <Link href={"/inner/" + post.id}>
                     <a className="urbanist-black-18">
-                        {post.title}
+                        {post.title.substring(0, 20)}
                       </a>
                 </Link>
-                  <p className="raleway-grey-16">{post.created_at}</p>
-                  <p className="sm-des"dangerouslySetInnerHTML={{__html:post.description.substring(0, 50)}}>
+                  <p className="raleway-grey-16">{post.created_date}</p>
+                  <p className="sm-des"dangerouslySetInnerHTML={{__html:post.description.substring(0, 100)}}>
                    
                   </p>
                 </div>

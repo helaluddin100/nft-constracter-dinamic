@@ -1,5 +1,6 @@
 import axios from '../../lib/axios'
 import AppLayout from "../../component/Layout/Layout";
+import LatestPost from "./LatestPost";
 export default function BlogDetails({post}) {
     return (
         <>
@@ -19,7 +20,7 @@ export default function BlogDetails({post}) {
                   </div>
                   <div>
                     <img src="../assets/imgs/calendar-p.svg" alt="User" />
-                    <p className="urbanist-grey-15">{post.created_at}</p>
+                    <p className="urbanist-grey-15">{post.created_date}</p>
                   </div>
                   
                 </div>
@@ -39,7 +40,7 @@ export default function BlogDetails({post}) {
 
               <div className="tags-media">
                 <div className="soc-share">
-                  <p className="urbanist-black-18">Popular Tags</p>
+                  <p className="urbanist-black-18">Share:</p>
                   <div className="soc-tags-container">
                     <a href="#" target="_blank">
                       <div className="soc-tag">
@@ -112,52 +113,7 @@ export default function BlogDetails({post}) {
             </div>
 
             {/* <!---------------------- right side -------------------------------> */}
-            <div className="blog-right-side">
-
-
-              <div className="related-news">
-                <p className="urbanist-dark-22">Recent News</p>
-
-                <div className="news-container">
-                  <div className="news">
-                    <img
-                      src="assets/imgs/news-img-2.png"
-                      className="recent-post-img"
-                      alt=""
-                    />
-
-                    <div className="news-txt">
-                      <div className="news-date">
-                        <img src="../assets/imgs/calendar.svg" alt="Calendar" />
-                        <p className="raleway-grey-14">05 Jan 2022</p>
-                      </div>
-
-                      <p className="urbanist-black-16">
-                        Comprensive Guides Server Push Design Feature
-                      </p>
-                    </div>
-                  </div>
-                  <div className="news">
-                    <img
-                      src="assets/imgs/news-img.png"
-                      className="recent-post-img"
-                      alt=""
-                    />
-
-                    <div className="news-txt">
-                      <div className="news-date">
-                        <img src="../assets/imgs/calendar.svg" alt="Calendar" />
-                        <p className="raleway-grey-14">05 Jan 2022</p>
-                      </div>
-
-                      <p className="urbanist-black-16">
-                        Comprensive Guides Server Push Design Feature
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <LatestPost />
           </section>
         </div>
       </div>

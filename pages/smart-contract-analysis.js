@@ -3,6 +3,7 @@ import AppLayout from "../component/Layout/Layout";
 import { Navigation, A11y } from "swiper";
 import CountUp from "react-countup";
 import { Swiper, SwiperSlide } from "swiper/react";
+import DemoForm from "./inner/demoform";
 function Business() {
   const [serviceActive, setServiceActive] = useState(1);
 
@@ -170,95 +171,9 @@ function Business() {
         </section>
         {/* ================about us section end ================== */}
         {/* ===================demo request section ================== */}
-        <section
-          className="demo-request"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div className="container">
-            <div className="section-title">
-              <p className="sm-title">best service</p>
-              <h2 className="sec-title">Request A demo</h2>
-              <p className="sec-des">
-                Get more software development information about exchange
-                software wallet software derivate products and ETC
-              </p>
-            </div>
-
-            <div className="row cpt-7">
-              <div className="request-form">
-                <form action="">
-                  <div className="form-group-2">
-                    <div className="input-group">
-                      <label htmlFor="name">Your Name</label>
-                      <div className="input-box">
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Enter Your Name"
-                        />
-                      </div>
-                    </div>
-                    <div className="input-group">
-                      <label htmlFor="phone-number">Phone Number:</label>
-                      <div className="input-box">
-                        <input
-                          type="text"
-                          name="phone-number"
-                          placeholder="+1234567890"
-                          className="form-control with-select"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-group-2">
-                    <div className="input-group">
-                      <label htmlFor="name">Your E-mail :</label>
-                      <div className="input-box">
-                        <input
-                          type="email"
-                          className="form-control"
-                          placeholder="YourEmail@domain.com"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="input-group">
-                      <label htmlFor="phone-number">Whatsapp :</label>
-                      <div className="input-box">
-                        <input
-                          type="text"
-                          name="phone-number"
-                          placeholder="Social Acciount"
-                          className="form-control with-select"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="form-group">
-                    <div className="input-group">
-                      <label htmlFor="name">Consult :</label>
-                      <div className="input-box">
-                        <textarea
-                          name=""
-                          className="form-control"
-                          cols="30"
-                          rows="10"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-group mt-3">
-                    <button className="custom-btn" type="submit">
-                      Get A Demo
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div id="demo-sec">
+        <DemoForm />
+      </div>
         {/* ===================demo request section end ================== */}
         {/* ===================service section ================== */}
         <section>
