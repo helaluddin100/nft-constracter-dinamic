@@ -1,4 +1,5 @@
 import AppLayout from "../component/Layout/Layout";
+import Contract from "./inner/Contract";
 function About() {
   return (
     <>
@@ -200,96 +201,7 @@ function About() {
         </div>
       </div>
 
-      <section>
-        <div className="contact-area cpb-6">
-          <div className="container">
-            <div className="section-title cpb-7">
-              <h2 className="sec-title">CONNECT WITH US</h2>
-              <p className="sec-des">
-                We&amp; re excited to hear about your project. Schedule a call
-                today and Connect with our experts. At Maticz, We respect your
-                privacy and Never share your details with anyone. Let&amp; s
-                build together.
-              </p>
-            </div>
-
-            <div className="row">
-              <div className="request-form">
-                <form action="">
-                  <div className="form-group-2">
-                    <div className="input-group">
-                      <label htmlFor="name">Your Name</label>
-                      <div className="input-box">
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Enter Your Name"
-                        />
-                      </div>
-                    </div>
-                    <div className="input-group">
-                      <label htmlFor="phone-number">
-                        Phone Number with (country code):
-                      </label>
-                      <div className="input-box">
-                        <input
-                          type="text"
-                          name="phone-number"
-                          placeholder="+1234567890"
-                          className="form-control with-select"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-group-2">
-                    <div className="input-group">
-                      <label htmlFor="name">Your E-mail :</label>
-                      <div className="input-box">
-                        <input
-                          type="email"
-                          className="form-control"
-                          placeholder="YourEmail@domain.com"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="input-group">
-                      <label htmlFor="subject">Subject :</label>
-                      <div className="input-box">
-                        <input
-                          type="text"
-                          name="subject"
-                          placeholder="Subject"
-                          className="form-control with-select"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="form-group">
-                    <div className="input-group">
-                      <label htmlFor="name">Consult :</label>
-                      <div className="input-box">
-                        <textarea
-                          name=""
-                          className="form-control"
-                          cols="30"
-                          rows="10"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-group mt-3">
-                    <button className="custom-btn" type="submit">
-                      Send Message
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Contract />
 
       {/* ========================talk to ====================== */}
       <section className="talk-to cpy-6">

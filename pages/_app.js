@@ -21,12 +21,8 @@ function MyApp({ Component, pageProps }) {
   }, []);
   const title = Component.title || "NFT - Full Stack Web Development Services";
   const image = Component.image || "assets/img/logo/logo.svg";
-  const description =
-    Component.description ||
-    "NFT - Full Stack Web Development Services by NFT Constractor";
-  const keywords =
-    Component.keywords ||
-    "nft, full stack, web development, website, website design , website development,development, nft constracter, minting website";
+  const description = Component.description || "NFT - Full Stack Web Development Services by NFT Constructer";
+  const keywords = Component.keywords || "nft, full stack, web development, website, website design , website development,development, nft constracter, minting website";
   const Layout = Component.layout || Fragment;
   return (
     <>

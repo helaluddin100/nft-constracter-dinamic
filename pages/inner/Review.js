@@ -39,7 +39,7 @@ function Review() {
                   <SwiperSlide>
                     <div className="client-review-slider">
                       <div className="review-img">
-                        <img src="assets/img/portfolio/nft_constructer_nft_collectibles.jpg" alt="" />
+                        <img src="assets/img/review/nft_constructer_1.jpg" alt="" />
                       </div>
                       <div className="review-content">
                         <h2 className="content-title">
@@ -85,7 +85,99 @@ function Review() {
                   <SwiperSlide>
                     <div className="client-review-slider">
                       <div className="review-img">
-                        <img src="assets/img/inner/review.png" alt="" />
+                        <img src="assets/img/review/nft_constructer_3.jpg" alt="" />
+                      </div>
+                      <div className="review-content">
+                        <h2 className="content-title">
+                          Save time managing social media for your business
+                        </h2>
+                        <p>
+                          “This is by far the simplest, most frictionless,
+                          easiest-to-get-going platform that I’ve ever worked
+                          in. Just being able to upload a link and bounce”
+                        </p>
+                        <div className="rating">
+                          <ul className="rating-ul">
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div className="client-info">
+                          <div className="client-img">
+                            <img src="assets/img/inner/client.png" alt="" />
+                          </div>
+                          <div className="client-name">
+                            <h3>Branun Yes </h3>
+                            <p>CEO of Arcane</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="client-review-slider">
+                      <div className="review-img">
+                        <img src="assets/img/review/nft_constructer_2.jpg" alt="" />
+                      </div>
+                      <div className="review-content">
+                        <h2 className="content-title">
+                          Save time managing social media for your business
+                        </h2>
+                        <p>
+                          “This is by far the simplest, most frictionless,
+                          easiest-to-get-going platform that I’ve ever worked
+                          in. Just being able to upload a link and bounce”
+                        </p>
+                        <div className="rating">
+                          <ul className="rating-ul">
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                            <li>
+                              <i className="icofont-star"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div className="client-info">
+                          <div className="client-img">
+                            <img src="assets/img/inner/client.png" alt="" />
+                          </div>
+                          <div className="client-name">
+                            <h3>Branun Yes </h3>
+                            <p>CEO of Arcane</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="client-review-slider">
+                      <div className="review-img">
+                        <img src="assets/img/review/nft_constructer_4.jpg" alt="" />
                       </div>
                       <div className="review-content">
                         <h2 className="content-title">
